@@ -1,11 +1,11 @@
 services:
   - type: web
-    name: your-project-name
+    name: recipe-app
     env: node
     repo: https://github.com/Plbyatt86/recipe-app
     branch: main
-    buildCommand: npm install
-    startCommand: npm run build && npm run serve
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s build
     region: us
     envVars:
       - key: KEY
