@@ -2,7 +2,7 @@ services:
   - type: web
     name: your-project-name
     env: node
-    repo: https://github.com/yourusername/your-repo
+    repo: https://github.com/Plbyatt86/recipe-app
     branch: main
     buildCommand: npm install
     startCommand: npm run build && npm run serve
